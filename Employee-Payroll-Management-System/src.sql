@@ -89,7 +89,7 @@ END payroll_pkg;
 CREATE OR REPLACE PACKAGE BODY payroll_pkg AS
 
     -- 1. Private Function: Calculate Tax
-    -- Rules: 0% if < 50k, 10% if > 50k
+    -- Rules: 0% if < 60k, 10% if > 60k
     FUNCTION calculate_tax(p_annual_income NUMBER) RETURN NUMBER IS
         v_tax NUMBER := 0;
     BEGIN
