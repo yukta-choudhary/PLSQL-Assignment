@@ -188,8 +188,8 @@ BEGIN
     -- 4. Generate Reports
     payroll_pkg.dept_wise_report;
     
-    -- 5. Test Audit Trigger (Update ram's Salary)
-    UPDATE employees SET basic_salary = 65000 WHERE first_name = 'Ram';
+    -- 5. Test Audit Trigger (Update Bob's Salary)
+    UPDATE employees SET basic_salary = 65000 WHERE first_name = 'Bob';
     COMMIT;
 END;
 /
